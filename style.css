@@ -991,3 +991,13 @@ ol.children {
 .article-list .articles > li {
   margin: 20px 0 50px;
 }
+
+
+/* WooCommerce Styles */
+
+.woocommerce .woocommerce-breadcrumb {
+	padding-left: 10px;
+}
+.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count {
+  float: right;
+}
