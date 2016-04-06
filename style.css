@@ -993,11 +993,158 @@ ol.children {
 }
 
 
-/* WooCommerce Styles */
+/* Global / Shop WooCommerce Styles */
 
 .woocommerce .woocommerce-breadcrumb {
 	padding-left: 10px;
 }
 .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count {
   float: right;
+}
+.woocommerce ul.products li.product .onsale {
+  top: 10px;
+  right: 10px;
+  margin: 0;
+}
+.woocommerce span.onsale {
+  padding: 0;
+  text-align: right;
+  line-height: inherit;
+  margin: 0;
+  background-color: transparent;
+  color: #77a464;
+  font-size: 1.4rem;
+}
+.woocommerce ul.products li.product h3 {
+  float: left;
+}
+.woocommerce ul.products li.product .price {
+  float: right;
+  padding-top: 5px;
+}
+.woocommerce ul.products li.product .price del {
+  display: none;
+}
+.woocommerce ul.products li.product .button {
+  display: block;
+  clear: both;
+  background-color: white;
+  border: 1px #ccc solid;
+  margin-top: 10px;
+  font-weight: normal;
+  color: #777;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.woocommerce a.added_to_cart {
+  padding-top: .5em;
+  white-space: nowrap;
+  display: inline-block;
+  border: 1px #ccc solid;
+  position: absolute;
+  padding: 5px 10px 6px;
+  z-index: 100;
+  background-color: #77a464;
+  border-radius: 4px;
+  color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Single Page WooCommerce Styles */
+
+.woocommerce div.product div.images, .woocommerce-page div.product div.images {
+  float: right;
+  width: 100%;
+}
+.woocommerce div.product div.images a.woocommerce-main-image {
+  width: 80%;
+  float: left;
+  display: block;
+}
+.woocommerce div.product div.images div.thumbnails {
+  float: right;
+  width: 18%;
+  padding-top: 0;
+}
+.woocommerce div.product div.thumbnails a, .woocommerce-page div.product div.thumbnails a {
+  width: 100%
+}
+.single-product span.onsale {
+  top: 20px;
+  left: 0;
+  font-size: 1.6rem;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  font-size: 1.4rem;
+}
+.woocommerce div.product p.price del, .woocommerce div.product span.price del {
+  display: inline;
+}
+.woocommerce div.product form.cart, .woocommerce div.product p.cart {
+  margin: 40px auto;
+  width: 80%;
+}
+.woocommerce div.product form.cart input.input-text.qty.text {
+  font-size: 1rem;
+  padding: 10px;
+}
+.woocommerce div.product form.cart .variations_button {
+  margin-top: 10px;
+}
+.woocommerce div.product form.cart button.single_add_to_cart_button.button {
+  float: left;
+  padding: 18px;
+  font-size: 1rem;
+}
+.posted_in a {
+  border: 1px #ccc solid;
+  padding: 4px;
+  border-radius: 4px;
+  margin: 0;
+  margin-right: 4px;
+}
+.single-product #reviews #comments h2 {
+  display none;
+}
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+  float: right;
+  width: 18%;
+  position: relative;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+  float: left;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.single-product #reviews #comments ol.commentlist li .comment-text p.meta {
+  font-size: 1rem;
+}
+p.woocommerce-verification-required {
+  font-size: .8rem;
+  color: #999;
+  font-size: italic;
+}
+.single-product .related.products h2 {
+  font-size: 1.4rem;
+  margin: 40px 0 10px;
+}
+.single-product .related.products ul.products li.product {
+  width: 44%;
+}
+.single-product .related.products ul.products li.product a img {
+  margin-bottom: 0;
+}
+.single-product .related.products h3 {
+  font-weight: normal;
+}
+.single-product .related.products .price,
+.single-product .related.products .button,
+.single-product .related.products .onsale {
+  display: none !important;
 }
