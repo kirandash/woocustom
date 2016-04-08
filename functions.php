@@ -20,8 +20,8 @@ function wpt_footer_cart_link() {
 	global $woocommerce;
 	
 	if ( ( sizeof( $woocommerce->cart->cart_contents) > 0 ) && ( !is_cart() && !is_checkout() ) ) :
-		echo '<a href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';
-		echo '<a href="' . $woocommerce->cart->get_checkout_url() . '" title="' . __( 'Checkout' ) . '">' . __( 'Checkout' ) . '</a>';
+		echo '<a class="btn alt" href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';
+		echo '<a class="btn" href="' . $woocommerce->cart->get_checkout_url() . '" title="' . __( 'Checkout' ) . '">' . __( 'Checkout' ) . '</a>';
 	endif;
 
 }
