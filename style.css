@@ -1260,3 +1260,27 @@ a.shipping-calculator-button {
 p#billing_postcode_field + .clear {
   display: none;
 }
+.woocommerce-checkout input.button[type=submit] {
+  font-size: 200%;
+}
+
+address {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.woocommerce-account .address .title h3 {
+  float: none;
+}
+
+/*  Use the following styles if your country option does not appear at the top of the form */
+
+p#billing_email_field,
+p#billing_postcode_field {
+  width: 100%;
+}
+
+/* Message Styles not included in videos */
+
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message {
+  font-size: 1.2rem;
+}
