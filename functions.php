@@ -26,6 +26,28 @@ function wpt_footer_cart_link() {
 
 }
 
+function wpt_custom_billing_fields( $fields = array() ) {
+	
+	unset ( $fields['billing_company'] ); 
+	unset ( $fields['billing_address_1'] ); 
+	unset ( $fields['billing_address_2'] ); 
+	unset ( $fields['billing_state'] ); 
+	unset ( $fields['billing_city'] ); 
+	unset ( $fields['billing_phone'] ); 
+	unset ( $fields['billing_country'] ); 
+	
+	//NOTE THE ABOVE RULE IS SAME FOR SHIPPING TOO it is just shipping in place of billing
+	
+	//echo "<pre>";
+	//var_export( $fields );
+	//echo "</pre>";
+	
+	return $fields;
+		
+}
+
+add_filter( 'woocommerce_billing_fields', 'wpt_custom_billing_fields' );
+
 function wpt_excerpt_length( $length ) {
 	return 16;
 }

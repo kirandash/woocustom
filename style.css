@@ -1254,3 +1254,9 @@ a.shipping-calculator-button {
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
   font-size: 1.4rem;
 }
+
+/* Checkout */
+
+p#billing_postcode_field + .clear {
+  display: none;
+}
