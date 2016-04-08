@@ -1175,3 +1175,8 @@ footer a.btn.alt {
   border-color: #ccc;
   color: #222;  
 }
+@media all and (min-width: 40.063em) {
+  nav#main-nav li:last-child {
+    display: none;
+  }
+}
